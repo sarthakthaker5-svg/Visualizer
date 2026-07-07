@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The **Sales Data Analyzer** is a Python-based console application developed to perform data analysis and visualization on CSV datasets. The project demonstrates Python data analysis techniques using Pandas, NumPy, Matplotlib, and Seaborn along with object-oriented programming concepts and menu-driven interaction.
+The Sales Data Analyzer is a Python-based data analysis application developed in Jupyter Notebook to perform data analysis and visualization on CSV datasets. The project demonstrates the use of Pandas, NumPy, Matplotlib, and Seaborn, along with Object-Oriented Programming (OOP) concepts and a menu-driven interface.
 
 The application allows users to load datasets, explore data, clean missing values, perform mathematical and statistical analysis, generate visualizations, create pivot tables, split data into groups, and save generated plots.
 

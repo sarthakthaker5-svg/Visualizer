@@ -1,144 +1,149 @@
-# Pandas Analyzer & Data Visualization
+# 📊 Sales Data Analyzer
 
 ## Project Overview
 
-The Sales Data Analyzer is a Python-based data analysis application developed in Jupyter Notebook to perform data analysis and visualization on CSV datasets. The project demonstrates the use of Pandas, NumPy, Matplotlib, and Seaborn, along with Object-Oriented Programming (OOP) concepts and a menu-driven interface.
+**Sales Data Analyzer** is a Python-based data analysis application developed in **Jupyter Notebook** using **Pandas**, **NumPy**, **Matplotlib**, and **Seaborn**. The project demonstrates practical data analysis techniques along with **Object-Oriented Programming (OOP)** concepts through a menu-driven interface.
 
-The application allows users to load datasets, explore data, clean missing values, perform mathematical and statistical analysis, generate visualizations, create pivot tables, split data into groups, and save generated plots.
-
----
-
-## Features
-
-### 1. Load Dataset
-
-* Loads CSV files using Pandas.
-* Displays confirmation after successful loading.
-* Handles file loading errors using exception handling.
-
-### 2. Explore Data
-
-Allows users to inspect dataset contents.
-
-Displays:
-
-* First 5 rows
-* Last 5 rows
-* Column names
-* Data types
-* Dataset information
-
-### 3. Handle Missing Data
-
-Provides options to manage missing values:
-
-* Display rows containing missing values
-* Fill missing values with mean
-* Drop rows with missing values
-* Replace missing values with custom values
-
-### 4. Mathematical Operations
-
-Performs calculations on numerical columns:
-
-* Sum
-* Mean
-* Maximum value
-* Minimum value
-
-### 5. Statistical Analysis
-
-Generates statistical insights:
-
-* Descriptive statistics
-* Standard deviation
-* Variance
-* Percentiles
-
-### 6. Data Visualization
-
-Supports multiple chart types:
-
-* Bar Plot
-* Line Plot
-* Scatter Plot
-* Pie Chart
-* Histogram
-* Stack Plot
-* Box Plot
-* Heatmap
-
-### 7. Save Visualization
-
-* Saves generated plots as image files.
-* Supports custom filenames.
-
-### 8. Create Pivot Table
-
-* Generates pivot tables for grouped data analysis.
-
-### 9. Split Data
-
-* Splits datasets into groups based on selected columns.
-
-### 10. Search, Sort, and Filter
-
-Allows users to:
-
-* Search records
-* Sort data
-* Filter records
-
-### 11. Exit Program
-
-* Safely terminates the application.
+The application enables users to load CSV datasets, explore and clean data, perform mathematical and statistical analysis, visualize data using various charts, create pivot tables, group datasets, and save generated visualizations as image files.
 
 ---
 
-## Concepts Demonstrated
+# Features
 
-### Python Libraries Used
+## 1. Load Dataset
 
-The project uses:
-
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
+- Load CSV datasets using Pandas.
+- Handles invalid file paths using exception handling.
+- Displays a success message after loading the dataset.
 
 ---
 
-### Built-in Functions
+## 2. Explore Data
 
-Functions used:
+Explore the loaded dataset through an interactive submenu.
 
-* `input()`
-* `print()`
-* `len()`
-* `dict()`
-* `tuple()`
+Options include:
 
----
-
-### User Defined Functions (UDF)
-
-Functions created by the programmer:
-
-* `load_data()`
-* `explore_data()`
-* `clean_data()`
-* `mathematical_operations()`
-* `search_sort_filter()`
-* `statistical_analysis()`
-* `create_pivot_table()`
-* `split_data()`
-* `visualize_data()`
-* `save_plot()`
-* `main()`
+- Display first 5 rows
+- Display last 5 rows
+- Display column names
+- Display data types
+- Display dataset information
 
 ---
 
-### Object-Oriented Programming (OOP)
+## 3. Handle Missing Data
+
+Provides multiple options for handling missing values.
+
+- Display rows containing missing values
+- Fill missing numerical values using mean
+- Remove rows containing missing values
+- Replace missing values with a custom value
+
+---
+
+## 4. Mathematical Operations
+
+Perform mathematical calculations on numerical columns.
+
+Available operations:
+
+- Sum
+- Mean
+- Maximum
+- Minimum
+- Split dataset into groups using any column
+
+---
+
+## 5. Statistical Analysis
+
+Generate statistical insights from the dataset.
+
+Features include:
+
+- Descriptive Statistics
+- Standard Deviation
+- Variance
+- Percentiles
+- Search records
+- Sort dataset
+- Filter dataset
+
+---
+
+## 6. Data Visualization
+
+Generate different types of charts using Matplotlib and Seaborn.
+
+Supported visualizations:
+
+- Bar Plot
+- Line Plot
+- Scatter Plot
+- Pie Chart
+- Histogram
+- Stack Plot
+- Box Plot
+- Heatmap
+
+---
+
+## 7. Save Visualization
+
+- Save generated graphs as image files.
+- Supports custom file names.
+
+---
+
+## 8. Create Pivot Table
+
+Generate Pivot Tables using selected columns for summarized analysis.
+
+---
+
+## 9. Exit Program
+
+Safely terminates the application.
+
+---
+
+# Concepts Demonstrated
+
+## Python Libraries Used
+
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+
+---
+
+## Built-in Functions Used
+
+- `input()`
+- `print()`
+- `dict()`
+- `tuple()`
+
+---
+
+## User Defined Functions (UDF)
+
+- `load_data()`
+- `explore_data()`
+- `clean_data()`
+- `mathematical_operations()`
+- `statistical_analysis()`
+- `create_pivot_table()`
+- `visualize_data()`
+- `save_plot()`
+- `main()`
+
+---
+
+## Object-Oriented Programming (OOP)
 
 Implemented using:
 
@@ -146,45 +151,66 @@ Implemented using:
 class SalesDataAnalyzer:
 ```
 
-Features used:
+### OOP Concepts Used
 
-* Constructor (`__init__`)
-* Destructor (`__del__`)
-* Methods
-* Objects
+- Constructor (`__init__`)
+- Destructor (`__del__`)
+- Class
+- Object
+- Instance Methods
+- Encapsulation
 
 ---
 
-### Exception Handling
+## Exception Handling
 
-Used to handle:
+Implemented using:
 
 ```python
-Exception
+try:
+    ...
+except Exception as e:
 ```
 
 Handles:
 
-* Invalid file paths
-* Dataset loading errors
+- Invalid file paths
+- Dataset loading errors
 
 ---
 
-## Program Flow
+# Program Flow
 
-1. User starts the application.
-2. Main menu is displayed.
-3. User loads a dataset.
-4. User selects an operation.
-5. Program processes the selected option.
-6. Results or visualizations are displayed.
-7. User can continue using the application.
-8. Program exits safely.
-
+1. Start the application.
+2. Load a CSV dataset.
+3. Explore the dataset.
+4. Clean missing values (optional).
+5. Perform mathematical operations.
+6. Perform statistical analysis.
+7. Create visualizations.
+8. Save generated plots.
+9. Create pivot tables.
+10. Exit the application.
 
 ---
 
-## Output Screenshots
+# Project Structure
+
+```text
+Sales-Data-Analyzer/
+│
+├── SalesDataAnalyzer.ipynb
+├── sales.csv
+├── README.md
+├── FT1.PNG
+├── FT2.PNG
+├── FT3.PNG
+├── ...
+├── FT25.PNG
+└── DemoVideo.mp4
+```
+
+# Output Screenshots
 
 ### Output 1
 
@@ -201,7 +227,6 @@ Handles:
 ### Output 4
 
 ![Output 4](FT4.PNG)
-
 
 ### Output 5
 
@@ -279,18 +304,24 @@ Handles:
 
 ![Output 23](FT23.PNG)
 
+### Output 24
+
+![Output 24](FT24.PNG)
+
 ### Output 25
 
 ![Output 25](FT25.PNG)
 
-## Project Demo Video
+---
 
-Watch the complete project demonstration here:
+# Project Demo Video
+
+Watch the complete demonstration here:
 
 [▶ Watch Demo Video](https://drive.google.com/file/d/1iOfn3HovgXBYXlASKGm4qbwmBUe0gjCd/view)
 
 ---
 
-## Author
+# Author
 
 **Sarth Thakar**
